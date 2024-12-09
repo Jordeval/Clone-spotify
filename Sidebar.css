@@ -1,0 +1,70 @@
+:root {
+  --bg-color-section: #111111;
+  --bg-color-card: #242424;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+  max-width: 30%;
+}
+
+.header, .library {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--bg-color-section);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.library {
+  height: 90%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .icon {
+  margin-left: 40px;
+}
+
+.icon-icon {
+  width: 1.5rem;
+}
+
+.icon-textual {
+  font-size: 1rem;
+}
+
+.library-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.library-header-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.library-header-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.library-card {
+  background-color: var(--bg-color-card);
+  border-radius: 5px;
+  padding: 1.25rem;
+  line-height: 2rem;
+}
+
+.library-card h2 {
+  font-size: 1.25rem;
+}

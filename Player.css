@@ -1,0 +1,96 @@
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .player img {
+    width: 1.5rem;
+    border-radius: 5px;
+  }
+  
+  .player-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 30%;
+    padding-left: 10px;
+  }
+  
+  .player-left img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .player-left-song {
+    width: 100%;
+    font-size: 10px;
+  }
+  .player-left-song p {
+    position: absolute;
+  }
+  
+  .player-left-song p::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5rem;
+    width: 10rem;
+    height: 12px;
+    background-color: black;
+    z-index: 1;
+  }
+  
+  .player-center-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .player-center-temp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .player-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 20%;
+  }
+  
+  .progress-bar {
+    width: 60vw;
+    max-width: 500px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer; 
+  }
+  
+  .progress-bar hr {
+    display: flex;
+    align-items: center;
+    width: 0%; 
+    height: 2px;
+    background-color: blue; 
+    border-radius: 10px;
+    transition: width 0.1s; 
+  }
+  
+  .progress-volume {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
